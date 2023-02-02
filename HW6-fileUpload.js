@@ -30,7 +30,7 @@ function ask({title, cancel = false}) {
             })
         }
 
-        popup.addEventListener(submitButton, e => {
+        popup.addEventListener('submit', e => {
             e.preventDefault();
             const inputValue = e.target.file;
             resolve(inputValue);
